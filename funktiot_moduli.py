@@ -17,7 +17,7 @@ def suorakulma(sivuA, sivuB, lavistaja):
     A_nelio = sivuA * sivuA
     B_nelio = sivuB * sivuB
     l_nelio = lavistaja * lavistaja
-
+    # TODO 
     if A_nelio + B_nelio == l_nelio:
         suora = True
     else:     
@@ -25,6 +25,12 @@ def suorakulma(sivuA, sivuB, lavistaja):
     return suora
 
 # Testataan, että toimii 
-vastaus = suorakulma(3, 4, 5)
-print(vastaus)    
+if __name__ == "__main__":
+    # Testi kulma on suora
+    vastaus = suorakulma(3, 4, 5)
+    print(vastaus)    
+
+    # Testi kulma ei ole suora
+    vastaus = suorakulma(3, 4, 6)
+    print(vastaus)
 
